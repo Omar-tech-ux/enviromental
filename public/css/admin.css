@@ -1,0 +1,349 @@
+html,
+body {
+    height: 100%;
+    /* Ensures the HTML and body take up the full viewport height */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #A9CCE3;
+    flex-direction: column;
+
+    /* Aligns children (content-wrap and footer) in a column */
+}
+
+.content-wrap {
+    flex: 1;
+    /* This line makes content-wrap expand to fill available space, pushing the footer down */
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-link a:link,
+.nav-link a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link a:hover {
+    background-color: #dae7f1;
+    /* Darker shade on hover */
+    color: white;
+    /* Text color changes to white on hover */
+}
+
+.form-area {
+    padding-top: 2%;
+
+
+}
+
+.row.single-form {
+    box-shadow: 0 2px 20px -5px hsla(0, 0%, 0%, 0.5);
+}
+
+.left {
+    background: hsl(210, 45%, 30%);
+    padding: 200px 98px;
+
+}
+
+.left h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-family: "Platypi", serif;
+    font-size: 42px;
+}
+
+.left h2 span {
+    font-weight: 100;
+}
+
+.single-form {
+    background: hsl(0, 0%, 100%);
+
+}
+
+.right {
+    padding: 0 20px;
+    /* Adjust padding if necessary, too much padding could cause space issues */
+    position: relative;
+    width: 100%;
+    /* Take full width of the parent */
+    height: 100%;
+    /* Take full height of the parent, parent must have a defined height for this to work */
+    /* If you're using Bootstrap and want to remove the gutters: */
+    /* For Bootstrap 4 */
+    margin-right: 0;
+    margin-left: 0;
+
+    /* For Bootstrap 5, you might add g-0 to the row class in your HTML */
+}
+
+
+.right i {
+    position: absolute;
+    font-size: 80px;
+    left: -27px;
+    top: 40%;
+    color: hsl(0, 0%, 100%);
+}
+
+.form-control {
+    border: 2px solid hsl(0, 0%, 0%);
+}
+
+.right button {
+    border: none;
+    border-radius: 5px;
+    background: #486348;
+    width: 180px;
+    color: #fff;
+    padding: 15px 0;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.right button:hover {
+    background-color: #003300;
+}
+
+
+/*responsive*/
+
+@media (min-width:768px) and (max-width:991px) {
+    .right i {
+        top: -52px;
+        transform: rotate(90deg);
+        left: 50%;
+    }
+}
+
+@media (max-width:767px) {
+    .left {
+        padding: 90px 15px;
+        text-align: center;
+    }
+
+    .left h2 {
+        font-size: 25px;
+    }
+
+    .right {
+        padding: 25px;
+    }
+
+    .right i {
+        top: -52px;
+        transform: rotate(90deg);
+        left: 46%;
+    }
+
+    .right button {
+        width: 150px;
+        padding: 12px 0;
+    }
+
+}
+
+#info {
+    display: flex;
+    vertical-align: middle;
+}
+
+.header {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: flex-start;
+    /* Align items to the left */
+    align-items: center;
+}
+
+
+.logo-item {
+    margin-right: auto;
+    /* Aligns the logo to the left */
+    padding-left: 20px;
+    /* Add some padding if necessary */
+
+
+}
+
+.logo-item img {
+    width: 157px;
+    /* Adjust the width of the logo as needed */
+    height: auto;
+    /* Ensures the height adjusts proportionally */
+
+}
+
+.logo-item:hover {
+    opacity: 0.2;
+
+}
+
+.nav-link {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0 10px;
+    /* Adjust margin between links */
+    padding: 10px 20px;
+    /* New padding inside the boxes */
+    background-color: #f8f9fa;
+    /* Light grey background, you can choose any color */
+    border-radius: 5px;
+    /* Rounded corners */
+    box-shadow: 0 2px 5px #000000;
+    /* Optional: adds shadow for 3D effect */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+#language-select {
+    font-size: large;
+}
+
+
+
+.logo-item {
+    mix-blend-mode: multiply;
+}
+
+/*Footer*/
+.footer {
+    position: relative;
+    /* Establishes a positioning context for absolute positioning inside */
+    width: 100%;
+    padding: 80px 64px;
+    background: #e9ecef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Keeps content centered */
+    gap: 40px;
+    margin: auto;
+    border-top: 1px solid #ccc;
+}
+
+.footer-img {
+    position: absolute;
+    /* Position the logo absolutely relative to footer */
+    left: 100px;
+    /* Distance from the left side of the footer */
+    top: 50%;
+    /* Align vertically at the center */
+    transform: translateY(-50%);
+    /* Offset by half its height for true centering */
+}
+
+.footer-img img {
+    height: 70px;
+    /* Adjust the size as necessary */
+    width: auto;
+    margin-bottom: 100px;
+}
+
+.footer-links,
+.footer-legal {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    width: 100%;
+}
+
+.footer-link {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.footer-links a:link,
+.footer-links a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: teal;
+}
+
+
+.legal-text,
+.legal-link {
+    font-size: 14px;
+    line-height: 21px;
+    text-decoration: none;
+    /* Default state */
+}
+
+.legal-link:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+.footer-divider {
+    width: 100%;
+    /* Matches the width of the footer content */
+    border-top: 1px solid #ccc;
+    /* Color and thickness of the horizontal line */
+}
+
+.nav-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+
+.icon {
+    display: none;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+    .nav-items .icon {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        margin-right: 20px;
+
+    }
+
+    .nav-items .nav-link {
+        display: none;
+    }
+
+    .nav-items.responsive {
+        position: absolute;
+        top: 110px;
+        right: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: white;
+        z-index: 1;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-items.responsive .nav-link {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 10px 20px;
+        border-bottom: 1px solid #ddd;
+    }
+}

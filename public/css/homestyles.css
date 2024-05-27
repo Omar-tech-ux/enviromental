@@ -1,0 +1,437 @@
+body,
+html {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    text-align: center;
+    background-color: rgb(241 250 255);
+}
+
+
+/* Header Styles */
+.header {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: flex-start;
+    /* Align items to the left */
+    align-items: center;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+
+.logo-item {
+    margin-right: auto;
+    /* Aligns the logo to the left */
+    padding-left: 20px;
+    /* Add some padding if necessary */
+
+}
+
+.logo-item img {
+    width: 157px;
+    /* Adjust the width of the logo as needed */
+    height: auto;
+    /* Ensures the height adjusts proportionally */
+    mix-blend-mode: multiply;
+}
+
+.logo-item:hover {
+    opacity: 0.2;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-link a:link,
+.nav-link a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-link {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0 10px;
+    /* Adjust margin between links */
+    padding: 10px 20px;
+    /* New padding inside the boxes */
+    background-color: #f8f9fa;
+    /* Light grey background, you can choose any color */
+    border-radius: 5px;
+    /* Rounded corners */
+    box-shadow: 0 2px 5px #000000;
+    /* Optional: adds shadow for 3D effect */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.nav-link a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link a:hover {
+    background-color: #dae7f1;
+    /* Darker shade on hover */
+    color: white;
+    /* Text color changes to white on hover */
+}
+
+#language-select {
+    font-size: large;
+}
+
+/* Main Content Styles - Using CSS Grid */
+.main-content {
+    width: auto;
+    /* Allow the content to determine its width */
+    max-width: 1440px;
+    /* Set a maximum width but allow it to be smaller */
+    margin: auto;
+    margin-top: 50px;
+    /* Center the div in the viewport */
+    padding: 20px;
+    /* Adjust padding as necessary */
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center children vertically */
+    align-items: center;
+    /* Center children horizontally */
+    background-image: url('/images/bg.jpeg');
+    /* Update the path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+
+}
+
+
+.body-content {
+    width: 1440px;
+    padding: 112px 64px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Creates two columns of equal width */
+    gap: 80px;
+    /* Space between grid items */
+    margin: auto;
+    /* Centers the main content horizontally */
+    position: relative
+}
+
+.content-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centers content vertically within the block */
+    gap: 24px;
+}
+
+
+.content-block img {
+    border-radius: 15px;
+    border: solid 6px #063954;
+}
+
+.main-content-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center content horizontally */
+    justify-content: center;
+    /* Center content vertically */
+    text-align: center;
+    /* Center text inside the block */
+    width: 100%;
+    /* Take up all available width */
+    padding: 40px 0;
+    /* Add vertical padding */
+    height: 100vh;
+    /* Make the block take at least the height of the viewport */
+}
+
+
+
+.quote {
+    text-align: center;
+    font-size: 68px;
+    margin-top: 42px;
+    font-family: "Platypi", serif;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 69px;
+    color: #b1d0e7;
+    font-weight: 700;
+}
+
+.description {
+    margin: 40px 40px 40px;
+    font-size: 30px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 28px;
+    color: #deefc1;
+}
+
+
+
+
+/* Environmental Solutions Section */
+
+.title-content {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: "Platypi", serif;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    /* Centers the title content horizontally */
+
+    /* Explicitly set the background color to match the page */
+    padding: 20px 0;
+    /* Add vertical padding if needed */
+}
+
+.solutions-header {
+    font-size: 55px;
+    /* Adjust font size if needed */
+    line-height: 57.6px;
+    /* Typically 1.2 times the font size */
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 24px;
+    word-wrap: break-word;
+    /* Ensures that the text wraps and does not overflow */
+}
+
+.solution-item {
+    font-size: 27px;
+    font-weight: 700;
+    font-family: "Platypi", serif;
+}
+
+.solution-item-title {
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "Platypi", serif;
+    margin: 0 10px;
+    /* Adjust margin between links */
+    padding: 10px 20px;
+    /* New padding inside the boxes */
+    background-color: #e9ecef;
+    /* Light grey background, you can choose any color */
+    border-radius: 5px;
+    /* Rounded corners */
+}
+
+.solution-item-text {
+    font-size: 18px;
+    font-family: "Platypi", serif;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+
+.solution-button {
+    padding: 10px 20px;
+    /* Button padding */
+    font-size: 16px;
+    /* Text size within the button */
+    color: white;
+    /* Text color */
+    background-color: #4CAF50;
+    /* Background color, adjust as needed */
+    border: none;
+    /* No border */
+    border-radius: 5px;
+    /* Rounded corners for the button */
+    margin: 5px;
+    /* Space between buttons */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.video-container {
+    margin: 0 auto;
+    /* Center the container */
+    text-align: center;
+    /* Center inline elements within */
+}
+
+iframe {
+    width: 1050px;
+    /* Set the fixed width */
+    height: 580px;
+    /* Set the fixed height */
+    margin: 35px auto;
+    /* Center the iframe and give some space on the top and bottom */
+    display: block;
+    /* Block display to fill width of .video-container */
+    border: none;
+    /* Remove any border */
+}
+
+/* Footer Styles */
+.footer {
+    position: relative;
+    /* Establishes a positioning context for absolute positioning inside */
+    width: 100%;
+    padding: 80px 64px;
+    background: #e9ecef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Keeps content centered */
+    gap: 40px;
+    margin: auto;
+    border-top: 1px solid #ccc;
+}
+
+.footer-img {
+    position: absolute;
+    /* Position the logo absolutely relative to footer */
+    left: 100px;
+    /* Distance from the left side of the footer */
+    top: 50%;
+    /* Align vertically at the center */
+    transform: translateY(-50%);
+    /* Offset by half its height for true centering */
+}
+
+.footer-img img {
+    height: 70px;
+    /* Adjust the size as necessary */
+    width: auto;
+    margin-bottom: 100px;
+}
+
+.footer-links,
+.footer-legal {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    width: 100%;
+}
+
+.footer-link {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.legal-text,
+.legal-link {
+    text-align: center;
+}
+
+
+.legal-text,
+.legal-link {
+    font-size: 14px;
+    line-height: 21px;
+    text-decoration: none;
+    /* Default state */
+}
+
+.legal-link:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+.footer-divider {
+    width: 100%;
+    /* Matches the width of the footer content */
+    border-top: 1px solid #ccc;
+    /* Color and thickness of the horizontal line */
+}
+
+.footer-links a:link,
+.footer-links a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: teal;
+}
+
+/* Miscellaneous Styles */
+.banner {
+    width: 1312px;
+    height: 700px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), linear-gradient(0deg, #DBDBDB, #DBDBDB);
+    position: relative;
+}
+
+#map {
+    margin: 0 auto;
+    text-align: center;
+    width: 1530px;
+    height: 475px;
+    margin: 20px auto;
+    display: block;
+    border: none;
+}
+
+
+
+.icon {
+    display: none;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+    .nav-items .icon {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        margin-right: 20px;
+    }
+
+    .nav-items .nav-link {
+        display: none;
+    }
+
+    .nav-items.responsive {
+        position: absolute;
+        top: 110px;
+        right: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-items.responsive .nav-link {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 10px 20px;
+        border-bottom: 1px solid #ddd;
+    }
+}

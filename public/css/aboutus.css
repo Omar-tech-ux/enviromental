@@ -1,0 +1,202 @@
+body,
+html {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    text-align: center;
+    background: white;
+    /* Sets the entire page background to white */
+}
+
+
+.header {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: flex-start;
+    /* Align items to the left */
+    align-items: center;
+}
+
+.logo-item {
+    margin-right: auto;
+    /* Aligns the logo to the left */
+    padding-left: 20px;
+    /* Add some padding if necessary */
+
+}
+
+
+.logo-item img {
+    width: 167px;
+    /* Adjust the width of the logo as needed */
+    height: auto;
+    /* Ensures the height adjusts proportionally */
+    mix-blend-mode: multiply;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-link a:link,
+.nav-link a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+
+.nav-link {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0 10px;
+    /* Adjust margin between links */
+    padding: 10px 20px;
+    /* New padding inside the boxes */
+    background-color: #f8f9fa;
+    /* Light grey background, you can choose any color */
+    border-radius: 5px;
+    /* Rounded corners */
+    box-shadow: 0 2px 5px #000000;
+    /* Optional: adds shadow for 3D effect */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.nav-link a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link a:hover {
+    background-color: #a1c2de;
+    /* Darker shade on hover */
+    color: white;
+    /* Text color changes to white on hover */
+}
+
+#language-select {
+    font-size: large;
+}
+
+.icon {
+    display: none;
+}
+
+
+.content-wrap {
+    flex: 1;
+    /* This makes the content expand and fill the available space, pushing the footer down */
+}
+
+
+
+
+
+/* Footer Styles */
+.footer {
+    width: 100%;
+    padding: 80px 64px;
+    background: #e9ecef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centers footer content vertically */
+    gap: 40px;
+    /* Adjusted gap for better spacing */
+    margin: auto;
+    /* Centers the footer horizontally */
+    border-top: 1px solid #ccc;
+    /* Adds a top border to the entire footer for stylistic consistency */
+}
+
+.footer-links,
+.footer-legal {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    width: 100%;
+    /* Ensures the elements use full available width */
+}
+
+.footer-link {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.legal-text,
+.legal-link {
+    font-size: 14px;
+    line-height: 21px;
+    text-decoration: none;
+    /* Default state */
+}
+
+.legal-link:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+.footer-divider {
+    width: 100%;
+    /* Matches the width of the footer content */
+    border-top: 1px solid #ccc;
+    /* Color and thickness of the horizontal line */
+}
+
+.footer-links a:link,
+.footer-links a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: teal;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .icon {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+
+    }
+
+    .nav-items.responsive,
+    .nav-items.responsive .nav-link,
+    .nav-items.responsive select,
+    .language-selector {
+        display: block;
+        width: 100%;
+        /* Full width to fit the container */
+        text-align: center;
+        /* Center align the text */
+        padding: 12px 20px;
+        /* Adds sufficient padding for touch targets */
+    }
+
+    .nav-items .nav-link {
+        display: none;
+        /* Hide all nav links initially */
+    }
+
+}
